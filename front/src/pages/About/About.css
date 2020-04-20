@@ -1,0 +1,108 @@
+.intro {    
+    width: 100%;
+    height: 680px;
+    /* filter: brightness(50%);  */
+    /* 배경을 사용하는 요소를 다 채울 수 있게 이미지를 확대 또는 축소합니다. 가로 세로 비율을 유지합니다. */
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+                  url("../../images/intro.webp");
+    color: white;
+}
+.intro-text {
+    padding: 2rem 0rem;
+    width: 290px;
+}
+.intro-text h1 {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.intro-text p {
+    font-size: 1rem;
+    max-width: 210px;
+    margin-top: 1rem;
+    font-weight: bold;
+    word-break: keep-all;
+}
+section {
+    padding: 20px;
+}
+section h2 {
+    padding-top: 20px;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+section p {
+    font-size: 0.9rem;
+    line-height: 20px;
+}
+.image-wrapper {
+    text-align: center;
+    margin: 30px auto;
+}
+.intern-to-full {
+    width: 237px;
+}
+.process {
+    background-color: rgb(229, 234, 234);
+}
+.process .slide-wrapper {
+    display: flex;
+    height: 369px;
+}
+.process article {
+    margin-right: 1rem;
+    background: white;    
+}
+.benefit {
+    background-image: url("../../images/benefit_background.jpg");
+    background-size: cover;
+}
+.banefit-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);    
+}
+.benefit-card {
+    background: white;
+    padding: 1rem;
+}
+.benefit-card h3 {
+    color: rgb(23, 161, 255);
+    font-weight: bold;
+}
+.benefit-card p {
+    line-height: 1.5rem;
+    max-width: 296px;
+}
+.interview-wrapper {
+    background-image: url("../../images/interview.png");
+    background-position: 80% 25%;
+    opacity: .8;
+}
+.interview {
+    background: white;
+    opacity: .9;
+    padding: 20px 24px;
+    border-radius: 5px;
+}
+.about-footer {
+    height: 195px;
+    text-align: center;
+    background-color: rgb(3, 71, 88);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.about-footer p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+.about-footer a {
+    color: rgb(23, 161, 255);
+    text-decoration: none;
+}

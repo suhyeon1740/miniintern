@@ -1,0 +1,29 @@
+header {
+    padding: 0.5rem 0;
+}
+header .inner-block {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    padding: 0 1rem;
+}
+nav li{
+    display: inline-block;
+}
+nav li a {
+    padding: 1.5rem 1rem;
+    color: rgb(170, 177, 177);
+    text-decoration: none;
+}
+.active {
+    color: inherit;
+}
+.header-inner-block {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+.login-menu a{
+    color: #17a1ff;
+}
