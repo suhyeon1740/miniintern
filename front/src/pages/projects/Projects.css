@@ -92,6 +92,15 @@
 .end {
     color: #bdbab6;
 }
+.pagination {
+    text-align: center;
+}
+.pagination span {
+    margin-right: 1rem;
+}
+.pagination .active {
+    color: #1cc5b4;
+}
 @media (min-width:1024px) {
     .projects-list {
         grid-template-columns: repeat(4, 1fr);

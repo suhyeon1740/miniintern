@@ -33,7 +33,13 @@ const Projects = () => {
                         )
                     }
                 </div>
-                <div>page number</div>
+                <div className="pagination">
+                    <span><svg width="6" height="10" xmlns="http://www.w3.org/2000/svg"><path d="M5.354 1.354a.5.5 0 0 0-.708-.708L.293 5l4.353 4.354a.5.5 0 0 0 .708-.708L1.707 5l3.647-3.646z"></path></svg></span>
+                    <span className="active">1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span><svg width="6" height="10" xmlns="http://www.w3.org/2000/svg"><path d="M.44 8.646a.5.5 0 0 0 .706.708L5.5 5 1.146.646a.5.5 0 0 0-.707.708L4.086 5 .439 8.646z"></path></svg></span>
+                </div>
             </section>
         </main>
     )
