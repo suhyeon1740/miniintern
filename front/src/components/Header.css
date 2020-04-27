@@ -12,9 +12,7 @@ nav li{
     display: inline-block;
 }
 nav li a {
-    padding: 1.5rem 1rem;
-    color: rgb(170, 177, 177);
-    text-decoration: none;
+    padding: 1.5rem 1rem;   
 }
 .active {
     color: inherit;
