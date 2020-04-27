@@ -7,9 +7,11 @@ const Projects = () => {
     return (
         <main>            
             <section className="projects-banner-wrap">               
-                <div className="projects-wrap projects-banner">
-                    <p>봄봄봄, 채용 시즌이 왔어요.</p>
-                    <p>이제는 스펙을 벗어난 역량으로 취업해 보세요.</p>
+                <div className="projects-wrap">
+                    <div className="projects-banner">
+                        <p>봄봄봄, 채용 시즌이 왔어요.</p>
+                        <p>이제는 스펙을 벗어난 역량으로 취업해 보세요.</p>
+                    </div>                                
                 </div>
             </section>
             <section className="projects-wrap">
