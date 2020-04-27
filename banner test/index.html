@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0; padding: 0;
+        }
+        ul {
+            display:flex; transition: 1s;
+        }
+        ul, li {
+            list-style: none;            
+        }
+        .slide {
+            height: 150px;
+            overflow: hidden;
+        }
+        .slide ul, .slide li{
+            height: 100%;
+        }
+        .slide li:nth-child(1) {
+            background:#faa;
+        }
+        .slide li:nth-child(2) {
+            background: #afa;
+        }
+        .slide li:nth-child(3) {
+            background: #aaf;
+        }
+        .slide li:nth-child(4) {
+            background: #faf;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <script>
+        const all = el => document.querySelectorAll(el)
+        const one = el => document.querySelector(el)
+        const slide = _ => {
+            const wrap = one('.slide')
+            const target = wrap.children[0] // ul
+            const len = target.children.length
+            // ul 너비 조절
+            target.style.cssText = `width:calc(100% * ${len});`
+            console.log(target.children)
+            console.log(Array.from(target.children))
+            // Array.form: 유사 배열 객체(array-like object)나반복 가능한 객체(iterable object)를 얕게 복사해새로운Array 객체를 만듭니다.
+            Array.from(target.children).forEach(el => el.style.cssText = `width: calc(100% / ${len});`)
+            let pos = 0
+            setInterval(() => {
+                pos = (pos + 1) % len
+                // 1 % 4 = 1
+                // 2 % 4 = 2
+                target.style.marginLeft = `${-pos * 100}%`
+                // -1 * 100: -100% 
+                // -2 * 200: -200%
+            }, 1500)
+
+            // ul의 너비는 li 4개* 100% => 400% 
+            // li의 너비는 100% / 4 => 25% 
+        }
+        slide()
+    </script>
+</body>
+</html>
