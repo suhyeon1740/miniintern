@@ -33,6 +33,11 @@
     line-height: 3.5rem;
     font-weight: 500;
 }
+.banner-controller {
+    position: absolute;
+    right: 50px;
+    top: 50px;
+}
 @media(min-width:1024px) {
     .banner-wrap {
         height: 400px;

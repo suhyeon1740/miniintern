@@ -13,7 +13,9 @@
     font-weight: normal;
     padding-top: 10px;
 }
-
 .home-project .project-description {
     height: 130px;
+}
+.home-page .inner-block {
+    position: relative;
 }

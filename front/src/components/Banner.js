@@ -24,7 +24,12 @@ const Banner = ({data}) => {
                     </div>
                     <img src={item.src} alt="" />
                 </div>
-            )}            
+            )}   
+            <ul className="banner-controller">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>         
         </div>
     )
 }
