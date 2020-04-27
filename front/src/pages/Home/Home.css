@@ -1,6 +1,9 @@
 .home-page {
     background: linear-gradient(rgb(240, 243, 243), white);    
 }
+.home-project {
+    padding: 20px;
+}
 .home-project h1 {
     font-size: 1.3rem;
     font-weight: normal;
@@ -9,4 +12,8 @@
     font-size: 1rem;
     font-weight: normal;
     padding-top: 10px;
+}
+
+.home-project .project-description {
+    height: 130px;
 }

@@ -8,6 +8,7 @@
 }
 .projects-banner-wrap {    
     background-color: rgb(240, 243, 243);    
+    padding: 20px;
 }
 .projects-banner {
     width: 100%;
