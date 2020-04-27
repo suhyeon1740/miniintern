@@ -14,7 +14,6 @@ const Header = () => {
                 <div className="header-inner-block">
                     <nav>
                         <ul>
-                            <li><Link to="/about">서비스소개</Link></li>
                             <li><Link to="/projects">기업과제 리스트</Link></li>
                         </ul>
                     </nav>
