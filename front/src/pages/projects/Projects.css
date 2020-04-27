@@ -1,0 +1,99 @@
+.projects-wrap {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: center;
+}
+.projects-banner-wrap {    
+    background-color: rgb(240, 243, 243);    
+}
+.projects-banner {
+    width: 100%;
+    height: 167px;
+    background-image: url('/images/spring_0228.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    border-radius: 5px;
+}
+.projects-banner p {
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.projects-banner p:last-child {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+.projects-list-wrap {
+    flex-direction: column;
+}
+.list-filter {
+    display: flex;
+}
+.list-filter select {
+    font-size: 1rem;
+    border: 1px solid rgb(210, 215, 215);
+    padding: 3px;
+    outline: none;
+    flex: 1;
+}
+.list-filter select:last-child {
+    margin-left: 1rem;
+}
+.projects-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    grid-auto-rows: minmax(100px, auto); 
+    padding: 20px 0;
+}
+.projects-list article {
+    border: 1px solid rgb(210, 215, 215);
+    border-radius: 5px;
+}
+.project-image {
+    width: 100%;
+}
+.project-description {
+    padding: 10px;
+    height: 110px;
+    position: relative;
+}
+.sub-title {
+    color: #afb2c6;
+    font-size: 0.8rem;
+}
+.title {
+    color: #1b1c1c;
+    font-size: 1rem;
+    font-weight: normal;
+}
+.status {    
+    font-weight: bold;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    border-top: 1px solid #f0f3f3;
+    font-size: 0.9rem;
+}
+.status p {
+    padding: 10px;
+}
+.recruiting {
+   color: #4fc88e;
+}
+.proceeding {
+    color: #fe873c;
+}
+.end {
+    color: #bdbab6;
+}
+@media (min-width:1024px) {
+    .projects-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
