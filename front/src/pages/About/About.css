@@ -5,7 +5,7 @@
     /* 배경을 사용하는 요소를 다 채울 수 있게 이미지를 확대 또는 축소합니다. 가로 세로 비율을 유지합니다. */
     background-size: cover;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-                  url("../../images/intro.webp");
+                  url("/images/about/intro.webp");
     color: white;
 }
 .intro-text {
@@ -54,7 +54,7 @@ section p {
     background: white;    
 }
 .benefit {
-    background-image: url("../../images/benefit_background.jpg");
+    background-image: url("/images/about/benefit_background.jpg");
     background-size: cover;
 }
 .banefit-wrapper {
@@ -76,7 +76,7 @@ section p {
     max-width: 296px;
 }
 .interview-wrapper {
-    background-image: url("../../images/interview.png");
+    background-image: url("/images/about/interview.png");
     background-position: 80% 25%;
     opacity: .8;
 }

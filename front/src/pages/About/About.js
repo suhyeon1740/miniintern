@@ -1,6 +1,5 @@
 import React from 'react'
 import './About.css'
-import internToFull_2x from '../../images/internToFull_2x.webp'
 import data from '../../store/about'
 import Process from '../../components/Process'
 import Benefit from '../../components/Benefit'
@@ -18,7 +17,7 @@ const About = () => {
             <section>
                 <h2>인턴십 경험에서<br />정규직 취업까지</h2>
                 <div className="image-wrapper">
-                    <img className="intern-to-full" src={internToFull_2x} alt="" />
+                    <img className="intern-to-full" src="/images/internToFull_2x.webp" alt="" />
                 </div>                
                 <p>
                     미니인턴은 온라인으로 진행되는 단기 인턴십 프로그램입니다. 참가자들은 효율적으로 기업 실무를 경험하고 자신에게 맞는 직무를 찾을 수 있죠. 참가 결과에 따라 정규직 취업까지도 노려볼 수 있습니다. 취업 성공의 꿈, 미니인턴과 함께 해보세요.

@@ -1,4 +1,5 @@
 import React from 'react'
+import './ProjectCard.css'
 
 const ProjectCard = ({src, subTitle, title, status}) => {
     //0: 종료
@@ -23,7 +24,7 @@ const ProjectCard = ({src, subTitle, title, status}) => {
         return <p className={className}>{statusText}</p>
     }
     return(
-        <article>
+        <article className="project-card">
             <img className="project-image" src={"/images/projects/"+src} alt="" />
             <div className="project-description">
                 <p className="sub-title">{subTitle}</p>
