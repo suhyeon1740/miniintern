@@ -1,0 +1,33 @@
+.home-banner {
+    position: relative;
+}
+.home-banner img {
+    width: 100%;
+    filter: brightness(70%);
+}
+.banner-title {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.home-banner p:first-child {
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+.home-banner p {    
+    color: white;  
+    font-size: 1.5rem;  
+    line-height: 3.5rem;
+    font-weight: 500;
+}
+.home-project h1 {
+    font-size: 1.3rem;
+    font-weight: normal;
+}
+.home-project h2 {
+    font-size: 1rem;
+    font-weight: normal;
+    padding-top: 10px;
+}
