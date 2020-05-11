@@ -1,7 +1,8 @@
 import React from 'react'
 import './ProjectCard.css'
+import { Link } from 'react-router-dom'
 
-const ProjectCard = ({src, subTitle, title, status}) => {
+const ProjectCard = ({link, src, subTitle, title, status}) => {
     //0: 종료
     //1: 모집중
     //2: 진행중
@@ -25,14 +26,16 @@ const ProjectCard = ({src, subTitle, title, status}) => {
     }
     return(
         <article className="project-card">
-            <img className="project-image" src={"/images/projects/"+src} alt="" />
-            <div className="project-description">
-                <p className="sub-title">{subTitle}</p>
-                <h2 className="title">{title}</h2>
-                <div className="status">
-                    {getStatusElement(status)}
-                </div>                
-            </div>            
+            <Link to={link}>
+                <img className="project-image" src={`/images/projects/${src}`} alt="" />
+                <div className="project-description">
+                    <p className="sub-title">{subTitle}</p>
+                    <h2 className="title">{title}</h2>
+                    <div className="status">
+                        {getStatusElement(status)}
+                    </div>                
+                </div>   
+            </Link>         
         </article>
     )
 }

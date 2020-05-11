@@ -1,0 +1,20 @@
+.project-detail {
+    background-color: rgb(240, 243, 243);   
+    flex: 1 1; 
+}
+.project-detail-wrap {
+    display: flex;
+    margin: 0 auto;
+    padding: 2rem 0;
+    width: 1000px;
+}
+.project-detail section {
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid rgb(210, 215, 215);
+    margin-top: 2rem;
+    padding: 1rem;
+}
+.project-detail aside {
+    margin-left: 2rem;
+}

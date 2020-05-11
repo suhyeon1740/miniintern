@@ -18,6 +18,9 @@ main {
   overflow: hidden;
 }
 
+li {
+  list-style: none;
+}
 @media(min-width: 1024px) {
   .inner-block {
     max-width: 1024px;    
